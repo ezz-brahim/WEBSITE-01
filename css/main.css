@@ -1,0 +1,221 @@
+@font-face{
+  font-family: 'font-1';
+  src : url("../fonts/DroidKufi-Bold.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'font-2';
+    src : url("../fonts/DroidKufi-Regular.ttf") format('truetype');
+  }
+  @font-face{
+    font-family: 'font-3';
+    src : url("../fonts/AA-GALAXY.ttf") format('truetype');
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background: #54CFD1;
+}
+
+body {
+    background: #54CFD1;
+    color: #FFF;
+    transition: .4s;
+    height: 100vh;
+}
+
+button {
+    border: none;
+    color: #FFF;
+    border-radius: 15px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    font-family: 'font-2';
+}
+
+.Nom{
+    font-size: 30px;
+    margin-bottom: 35px;
+    font-family: "font-3";
+    color: white;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: #FFF;
+    transition: .5s;
+}
+
+ul li a:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+ul li a button {
+    line-height: 20px;
+    background-color: #00BBBE;
+}
+
+button:hover {
+    color: #000000;
+}
+
+.banner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.2rem;
+}
+
+.banner .banner_img {
+    margin-bottom: 65px;
+}
+
+.banner .banner_img img{
+    width: 500px;
+}
+
+.banner .banner_title {
+    margin-bottom: 20px;
+}
+
+.banner .banner_title h1 {
+    font-size: 1rem;
+    font-family: "font-1";
+    color: #fff;
+    
+}
+
+.banner .description {
+    margin-bottom: 25px;
+}
+
+.banner .description p {
+    font-size: .9rem;
+    color: white;
+    font-family: "font-2";
+    text-align: justify;
+}
+
+.banner .btn2 a button {
+    background-color: #00BBBE;
+}
+
+@media (max-width:360px) {
+    body {
+        margin: 10px;
+        padding: 0;
+    }
+
+    header {
+        padding: 0;
+    }
+    
+    button {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 350px;
+    }
+
+    .banner .description {
+        width: 200px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 800px) {
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+        align-items: center;
+        padding: 35px 80px;
+    }
+
+    .Nom {
+        margin-bottom: 0;
+    }
+
+    ul {
+        align-items: center;
+    }
+
+    ul li {
+        margin-right: 45px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    .banner .banner_img {
+        grid-area: image;
+    }
+
+    .banner .banner_img img {
+        min-width: 600px;
+        width: 7    0%;
+    }
+
+    .banner .banner_txt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 30px 100px;
+        text-align: start;
+    }
+
+    .banner .banner_txt .banner_title h1{
+        font-size: 50px;
+    }
+
+    .banner .banner_txt .description:before {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100px;
+        background-color: #E8C100;
+        margin-bottom: 1.6rem;
+    }
+
+    .banner .banner_txt .description{
+        margin: 1rem 0;
+    }
+
+    .banner .banner_txt .btn2 {
+        margin: 1rem 0;
+        font-family: 'font-2';
+    }
+
+    button {
+        padding: 12px 20px;
+    }
+
+
+}
